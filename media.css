@@ -30,13 +30,13 @@
   }
 
   .restaurants-list {
-    grid-template-columns: repeat(2, 375px);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 18px;
   }
 
-  .restaurant-card img {
+  /* .restaurant-card img {
     width: 375px;
-  }
+  } */
 
   .footer-container {
     width: 768px;
