@@ -70,6 +70,12 @@ header {
   margin: 0 9px;
 }
 
+.delivery-span {
+  width: 120px;
+  color: #626262;
+  margin-bottom: 10px;
+}
+
 .delivery__location {
   position: relative;
   display: flex;
@@ -158,6 +164,7 @@ header {
 }
 
 .main-container {
+  display: block;
   width: 960px;
   margin: 40px auto;
 }
@@ -197,6 +204,10 @@ header {
   opacity: 0.5;
 }
 
+.delivery-display {
+  display: none;
+}
+
 .main-container__city {
   font-size: 22px;
   font-weight: normal;
@@ -208,7 +219,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 16px;
-  margin: 16px 0 80px;
+  margin: 16px auto 80px;
 }
 
 .restaurant-card {
@@ -416,7 +427,7 @@ footer {
   bottom: 30px;
   background: #59BD5A;
   border-radius: 2px;
-  
+
 }
 
 .footer-container__up-button img {
@@ -426,6 +437,6 @@ footer {
   margin: 27px auto;
 }
 
-.footer-container__up-button:hover  {
+.footer-container__up-button:hover {
   transform: translateY(-5px);
 }

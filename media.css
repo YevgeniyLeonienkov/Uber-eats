@@ -4,9 +4,8 @@
     width: 768px;
   }
 
-  .header-container__log {
+  .header-container__logo {
     width: 105px;
-    height: 10px;
   }
 
   .delivery {
@@ -29,14 +28,22 @@
     width: 768px;
   }
 
-  .restaurants-list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 18px;
+  .search-field__input-field {
+    width: 768px;
   }
 
-  /* .restaurant-card img {
-    width: 375px;
-  } */
+  .restaurants-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-card {
+    width: 376px;
+  }
+
+  .restaurant-card__img {
+    width: 376px;
+    height: 256px;
+  }
 
   .footer-container {
     width: 768px;
@@ -61,5 +68,108 @@
   .privacy li:nth-child(2) {
     margin: 0 200px 0 145px;
   }
-  
+
+}
+
+@media (max-width: 789px) {
+  .header-container {
+    width: 320px;
+  }
+
+  .delivery,
+  .header-container__basket {
+    display: none;
+  }
+
+  .header-container__sign-in {
+    width: 72px;
+  }
+
+  .header-container__register {
+    width: 72px;
+    margin-right: 0;
+  }
+
+  .main-container {
+    width: 320px;
+  }
+
+  .search-field {
+    width: 309px;
+    margin-bottom: 25px;
+  }
+
+  .search-field__input-field {
+    width: 309px;
+  }
+
+  .delivery {
+    margin: 0;
+  }
+
+  .delivery-display {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .restaurants-list {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-card {
+    width: 311px;
+  }
+
+  .restaurant-card__img {
+    width: 311px;
+    height: 250px;
+  }
+
+  .footer-container {
+    width: 320px;
+  }
+
+  .footer-container__line {
+    width: 304px;
+  }
+
+  .footer-navigation {
+    width: 320px;
+  }
+
+  .site-map {
+    display: block;
+  }
+
+  .site-language__select {
+    width: 173px;
+  }
+
+  .social a {
+    margin-bottom: 30px;
+  }
+
+  .download-apps {
+    grid-column-gap: 25px;
+    padding: 0 40px;
+  }
+
+  .download-apps__appstore,
+  .download-apps__playmarket {
+    width: 107px;
+  }
+
+  .privacy ul {
+    display: block;
+  }
+
+  .privacy li:nth-child(2) {
+    margin: 20px 0;
+  }
+
+  .footer-container__up-button {
+    width: 64px;
+    height: 64px;
+  }
+
 }

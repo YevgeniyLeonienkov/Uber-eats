@@ -15,10 +15,10 @@
 <body>
 	<header>
 		<section class="header-container">
-			
-				<a href="#" class="header-container__logo">
-					<img src="./img/logo.svg" alt="logo">
-				</a>	
+
+			<a href="#" class="header-container__logo">
+				<img src="./img/logo.svg" alt="logo">
+			</a>
 
 			<form class="delivery">
 
@@ -30,7 +30,7 @@
 				</div>
 
 				<span>to</span>
-				
+
 				<div class="delivery__location">
 					<div class="delivery__location-icon"></div>
 					<label for="search">
@@ -59,6 +59,29 @@
 				<input type="search" name="search-field" placeholder="Search for restaurant or cuisine"
 					class="search-field__input-field">
 			</form>
+
+			<div class="delivery-span delivery-display">
+				<span>When</span>
+				<span>To</span>
+			</div>
+
+			<form class="delivery delivery-display">
+
+				<div class="delivery-time">
+					<select class="delivery-time__select" name="delivery-time">
+						<option value="">ASAP</option>
+						<option value="">Select</option>
+					</select>
+				</div>
+
+				<div class="delivery__location">
+					<div class="delivery__location-icon"></div>
+					<label for="search">
+						<input type="text" value="ul. Tarasivska St, 16">
+					</label>
+				</div>
+			</form>
+
 
 			<h2 class="main-container__city">Kyiv Restaurants</h2>
 
@@ -186,7 +209,7 @@
 					<div class="social">
 
 						<div class="site-language">
-							
+
 							<select name="languages" id="language" class="site-language__select">
 								<option value="English">English</option>
 								<option value="English">Українська</option>
@@ -230,10 +253,10 @@
 
 			<section class="download-apps">
 				<div>
-					<a href="#"><img src="./img/appstore.png" alt="appstore"></a>
+					<a href="#"><img src="./img/appstore.png" alt="appstore" class="download-apps__appstore"></a>
 				</div>
 				<div>
-					<a href="#"><img src="./img/playmarket.png" alt="playmarket"></a>
+					<a href="#"><img src="./img/playmarket.png" alt="playmarket" class="download-apps__playmarket"></a>
 				</div>
 			</section>
 
