@@ -9,7 +9,8 @@
 	<link rel="shortcut icon" type="image/ico" href="./img/shortcut.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="./media.css">
+	<link rel="stylesheet" href="./media(max-width_1023px).css">
+	<link rel="stylesheet" href="./media(max-width_789px).css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 		<section class="header-container">
 			
 				<a href="#" class="header-container__logo">
-					<img src="./img/logo.svg" alt="logo">
+					<img src="./img/logo.svg" alt="Uber_eats">
 				</a>	
 
 			<form class="delivery">
@@ -33,7 +34,7 @@
 				
 				<div class="delivery__location">
 					<div class="delivery__location-icon"></div>
-					<label for="search">
+					<label>
 						<input type="text" value="ul. Tarasivska St, 16">
 					</label>
 				</div>
@@ -77,13 +78,13 @@
 				<div class="delivery__location">
 					<div class="delivery__location-icon"></div>
 					<label for="search">
-						<input type="text" value="ul. Tarasivska St, 16">
+						<input type="text" value="ul. Tarasivska St, 16" autocomplete="off">
 					</label>
 				</div>
 			</form>
 
 
-			<h2 class="main-container__city">Kyiv Restaurants</h2>
+			<h1 class="main-container__city">Kyiv Restaurants</h1>
 
 			<section class="restaurants-list">
 
@@ -211,9 +212,9 @@
 						<div class="site-language">
 							
 							<select name="languages" id="language" class="site-language__select">
-								<option value="English">English</option>
-								<option value="English">Українська</option>
-								<option value="English">Русский</option>
+								<option value="en">English</option>
+								<option value="ua">Українська</option>
+								<option value="ru">Русский</option>
 							</select>
 						</div>
 
@@ -269,10 +270,13 @@
 					<li class="privacy__item"><a href="#">Terms</a></li>
 				</ul>
 			</section>
-			<a href="#" class="footer-container__up-button"><img src="./img/arrow.png" alt="up"></a>
+			
+			<button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+			
 		</section>
 
 	</footer>
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>

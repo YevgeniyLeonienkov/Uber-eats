@@ -284,38 +284,21 @@ footer {
   width: 227px;
   border: 1px solid #3b3b3b;
   border-radius: 2px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  background-color: #3b3b3b;
+  background-image: url(./img/Globe.png), url(./img/Select.png);
+  background-position: top 12px left 16px, top 16px right 8px;
+  background-repeat: no-repeat;
   font-size: 13px;
   line-height: 15px;
   color: #fff;
   outline: none;
-  background-color: #3b3b3b;
   text-transform: uppercase;
   padding-left: 48px;
   margin-bottom: 33px;
   cursor: pointer;
-}
-
-.site-language::before {
-  content: "";
-  background: url(./img/Globe.png);
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 15px;
-  top: 12px;
-}
-
-.site-language::after {
-  content: "";
-  background: url(./img/Select.png) no-repeat;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 200px;
-  top: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 #language {
@@ -418,24 +401,31 @@ footer {
   color: #757575;
 }
 
-.footer-container__up-button {
-  position: absolute;
+#myBtn {
+  display: none;
   width: 80px;
   height: 80px;
+  position: fixed;
+  bottom: 20px;
   right: 30px;
-  bottom: 30px;
-  background: #59BD5A;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #59BD5A;
+  color: white;
+  cursor: pointer;
   border-radius: 2px;
-  
+  font-size: 24px;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: color 0.2s linear, bottom 0.2s linear;
 }
 
-.footer-container__up-button img {
-  width: 15px;
-  height: 25px;
-  display: block;
-  margin: 27px auto;
+#myBtn::after {
+  content: "-->";
 }
 
-.footer-container__up-button:hover  {
-  transform: translateY(-5px);
+#myBtn:hover {
+  color: #1D1D1D;
+  bottom: 25px;
 }
